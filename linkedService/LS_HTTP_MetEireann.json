@@ -1,0 +1,12 @@
+{
+	"name": "LS_HTTP_MetEireann",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://api.open-meteo.com",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
