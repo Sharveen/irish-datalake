@@ -1,0 +1,18 @@
+{
+	"name": "DS_HTTP_Weather",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_HTTP_MetEireann",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "/v1/forecast?latitude=53.3498&longitude=-6.2603&hourly=temperature_2m,precipitation,windspeed_10m&timezone=Europe/Dublin"
+			}
+		},
+		"schema": {}
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"name": "DS_ADLS_Bronze_Weather",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLS_IrishLake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "dublin_weather.json",
+				"folderPath": "weather",
+				"fileSystem": "bronze1"
+			}
+		},
+		"schema": {}
+	}
+}
